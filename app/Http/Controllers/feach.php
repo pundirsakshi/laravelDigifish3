@@ -39,6 +39,9 @@ class feach extends Controller
       $customers->address=$req->input('address');
       $customers->save();
       return redirect('data');
+
+      // Customer::where('id',$id)->update(['name'=>$req->name,'gender'=>$req->gender,'address'=>$req->address]);
+              // return redirect('data');
       
     }
 
